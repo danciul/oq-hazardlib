@@ -17,14 +17,14 @@
 
 """
 Module exports 
-:class:`EdwardsFah2013Foreland10MPa`,
-:class:`EdwardsFah2013Foreland20MPa`,
-:class:`EdwardsFah2013Foreland30MPa`,
-:class:`EdwardsFah2013Foreland50MPa`,
-:class:`EdwardsFah2013Foreland60MPa`,
-:class:`EdwardsFah2013Foreland75MPa`,
-:class:`EdwardsFah2013Foreland90MPa`,
-:class:`EdwardsFah2013Foreland120MPa`
+:class:`EdwardsFah2013Foreland10Bars`,
+:class:`EdwardsFah2013Foreland20Bars`,
+:class:`EdwardsFah2013Foreland30Bars`,
+:class:`EdwardsFah2013Foreland50Bars`,
+:class:`EdwardsFah2013Foreland60Bars`,
+:class:`EdwardsFah2013Foreland75Bars`,
+:class:`EdwardsFah2013Foreland90Bars`,
+:class:`EdwardsFah2013Foreland120Bars`
 """
 
 from __future__ import division
@@ -34,7 +34,7 @@ from openquake.hazardlib.gsim.base import GMPE, CoeffsTable
 from openquake.hazardlib import const
 from openquake.hazardlib.imt import PGV, PGA, SA
 from openquake.hazardlib.gsim.edwards_fah_2013a import (
-    EdwardsFah2013Alpine10MPa
+    EdwardsFah2013Alpine10Bars
 )
 from openquake.hazardlib.gsim.edwards_fah_2013f_coeffs import (
     COEFFS_FORELAND_10Bars,
@@ -52,7 +52,7 @@ from openquake.hazardlib.gsim.utils_swiss_gmpe import (
 )
 
 
-class EdwardsFah2013Foreland10MPa(EdwardsFah2013Alpine10MPa):
+class EdwardsFah2013Foreland10Bars(EdwardsFah2013Alpine10Bars):
 
     """
     This function implements the GMPE developed by Ben Edwards and
@@ -116,64 +116,64 @@ class EdwardsFah2013Foreland10MPa(EdwardsFah2013Alpine10MPa):
     COEFFS = COEFFS_FORELAND_10Bars
 
 
-class EdwardsFah2013Foreland20MPa(EdwardsFah2013Foreland10MPa):
+class EdwardsFah2013Foreland20Bars(EdwardsFah2013Foreland10Bars):
 
     """
     This class extends :class:`EdwardsFah2013Foreland`
-    and implements the 20Bars Model :class:`EdwardsFah2013Foreland20MPa`
+    and implements the 20Bars Model :class:`EdwardsFah2013Foreland20Bars`
     """
     COEFFS = COEFFS_FORELAND_20Bars
 
 
-class EdwardsFah2013Foreland30MPa(EdwardsFah2013Foreland10MPa):
+class EdwardsFah2013Foreland30Bars(EdwardsFah2013Foreland10Bars):
 
     """
     This class extends :class:`EdwardsFah2013Foreland`
-    and implements the 30Bars Model :class:`EdwardsFah2013Foreland30MPa`
+    and implements the 30Bars Model :class:`EdwardsFah2013Foreland30Bars`
     """
     COEFFS = COEFFS_FORELAND_30Bars
 
 
-class EdwardsFah2013Foreland50MPa(EdwardsFah2013Foreland10MPa):
+class EdwardsFah2013Foreland50Bars(EdwardsFah2013Foreland10Bars):
 
     """
     This class extends :class:`EdwardsFah2013Foreland`
-    and implements the 50Bars Model :class:`EdwardsFah2013Foreland50MPa`
+    and implements the 50Bars Model :class:`EdwardsFah2013Foreland50Bars`
     """
     COEFFS = COEFFS_FORELAND_50Bars
 
 
-class EdwardsFah2013Foreland60MPa(EdwardsFah2013Foreland10MPa):
+class EdwardsFah2013Foreland60Bars(EdwardsFah2013Foreland10Bars):
 
     """
     This class extends :class:`EdwardsFah2013Foreland`
-    and implements the 60Bars Model :class:`EdwardsFah2013Foreland60MPa`
+    and implements the 60Bars Model :class:`EdwardsFah2013Foreland60Bars`
     """
     COEFFS = COEFFS_FORELAND_60Bars
 
 
-class EdwardsFah2013Foreland75MPa(EdwardsFah2013Foreland10MPa):
+class EdwardsFah2013Foreland75Bars(EdwardsFah2013Foreland10Bars):
 
     """
     This class extends :class:`EdwardsFah2013Foreland`
-    and implements the 75Bars Model :class:`EdwardsFah2013Foreland75MPa`
+    and implements the 75Bars Model :class:`EdwardsFah2013Foreland75Bars`
     """
     COEFFS = COEFFS_FORELAND_75Bars
 
 
-class EdwardsFah2013Foreland90MPa(EdwardsFah2013Foreland10MPa):
+class EdwardsFah2013Foreland90Bars(EdwardsFah2013Foreland10Bars):
 
     """
     This class extends :class:`EdwardsFah2013Foreland`
-    and implements the 90Bars Model :class:`EdwardsFah2013Foreland90MPa`
+    and implements the 90Bars Model :class:`EdwardsFah2013Foreland90Bars`
     """
     COEFFS = COEFFS_FORELAND_90Bars
 
 
-class EdwardsFah2013Foreland120MPa(EdwardsFah2013Foreland10MPa):
+class EdwardsFah2013Foreland120Bars(EdwardsFah2013Foreland10Bars):
 
     """
     This class extends :class:`EdwardsFah2013Foreland`
-    and implements the 120Bars Model :class:`EdwardsFah2013Foreland120MPa`
+    and implements the 120Bars Model :class:`EdwardsFah2013Foreland120Bars`
     """
     COEFFS = COEFFS_FORELAND_120Bars
